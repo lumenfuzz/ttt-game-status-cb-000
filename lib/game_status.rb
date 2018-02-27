@@ -16,8 +16,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  result_val = nil
   dummy = WIN_COMBINATIONS.each do |win|
-    nil
+    board[win[0]] == "X" && board[win[1]] == "X" && board[win[2]] == "X" ? result_val = win : nil
   end
-  nil
+  result_val
 end
