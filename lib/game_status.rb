@@ -19,4 +19,5 @@ def won?(board)
   dummy = WIN_COMBINATIONS.each do |win|
     nil
   end
+  nil
 end
