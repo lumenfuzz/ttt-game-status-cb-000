@@ -19,6 +19,10 @@ def full?(board)
   !(board.any?{|i| i == "" || i == " "})
 end
 
+def draw?(board)
+  full?(board) && !won?(board)
+end
+
 def won?(board)
   result_val = nil
   dummy = WIN_COMBINATIONS.each do |win|
