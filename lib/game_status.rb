@@ -15,6 +15,10 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
+def full?(board)
+  !(board.any?{|i| i == "" || i == " "})
+end
+
 def won?(board)
   result_val = nil
   dummy = WIN_COMBINATIONS.each do |win|
